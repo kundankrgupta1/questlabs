@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { SERVER } from "../App";
 const AddUser = ({ setFormOpen, fetchData }) => {
 	const [profile_picture, setProfile_picture] = useState("");
 	const [email, setEmail] = useState("")
@@ -23,7 +24,7 @@ const AddUser = ({ setFormOpen, fetchData }) => {
 		e.preventDefault()
 		setIsLoading(true)
 		try {
-			const res = await axios.post("http://localhost:8080/user/create", { profile_picture, email, first_name, last_name, linkedin, twitter })
+			const res = await axios.post(`${SERVER}/user/create`, { profile_picture, email, first_name, last_name, linkedin, twitter })
 			console.log(res);
 			reset()
 			setIsLoading(false)

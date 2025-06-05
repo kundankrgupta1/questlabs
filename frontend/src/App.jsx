@@ -7,6 +7,8 @@ import { FaHome } from "react-icons/fa";
 import AddUser from "./Components/AddUser";
 import { MdAddBox } from "react-icons/md";
 import Loading from "./Components/Loading";
+export const SERVER = "https://questlabs-uxa4.onrender.com";
+// export const SERVER = "http://localhost:8080";
 const App = () => {
 	const [isLoading, setIsLoading] = useState(false)
 	const [data, setData] = useState([])
@@ -14,7 +16,7 @@ const App = () => {
 	const fetchData = async () => {
 		setIsLoading(true)
 		try {
-			const res = await axios.get("http://localhost:8080/user/all")
+			const res = await axios.get(`${SERVER}/user/all`)
 			console.log(res.data.users);
 			setData(res.data.users)
 			setIsLoading(false);
