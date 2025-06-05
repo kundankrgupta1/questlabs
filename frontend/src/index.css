@@ -1,0 +1,30 @@
+@import "tailwindcss";
+* {
+    font-family: "Manrope", sans-serif;
+}
+
+.animation_for_user {
+    animation-name: user_wala;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.Chakra {
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.Nanum {
+    font-family: "Nanum Myeongjo", serif;
+}
+
+.Manrope {
+    font-family: "Manrope", sans-serif;
+}
+
+.Robot {
+    font-family: "Roboto Mono", monospace;
+}
+
+.DM_serif {
+	font-family: "DM Serif Display", serif;
+}
