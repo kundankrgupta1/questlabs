@@ -85,7 +85,7 @@ const AddUser = ({ setFormOpen, fetchData }) => {
 						<input type="url" value={twitter} name="twitter_url" onChange={(e) => setTwitter(e.target.value)} className="border-2 border-gray-400 rounded-md px-4 py-2 outline-none" />
 					</div>
 				</div>
-				<button className="cursor-pointer w-38 rounded-xl border hover:bg-white hover:border hover:text-black bg-black mt-4 px-4 py-2 text-white capitalize font-medium">{isLoading ? "adding..." : "Submit"}</button>
+				<button className="transition duration-700 ease-in-out scale-95 hover:scale-100 cursor-pointer w-38 rounded-xl border hover:bg-white hover:border hover:text-black bg-black mt-4 px-4 py-2 text-white capitalize font-medium">{isLoading ? "adding..." : "Submit"}</button>
 			</form>
 			<div className="">
 				<img src="https://app.withrapha.com/_next/static/media/hire-with-rapha.2ed04ff6.svg" className="h-16" alt="" />

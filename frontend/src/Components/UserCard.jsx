@@ -3,8 +3,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 const UserCard = ({ email, first_name, last_name, profile_picture, linkedin, twitter }) => {
 	return (
 		<div
-			style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px" }}
-			className="w-58 rounded-xl overflow-hidden p-1 border border-gray-300"
+			className="qwe transition duration-700 ease-in-out scale-95 hover:scale-100 w-58 rounded-xl overflow-hidden p-1 border border-gray-300"
 		>
 			<img src={profile_picture ? profile_picture : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC8kiSH5ZSAcVoj3tAQQDoP_ux0sSricMyUg&s"} className="object-cover w-56 h-58 rounded-xl border border-gray-300" alt="" />
 			<div className="p-2 overflow-hidden flex flex-col gap-1">
